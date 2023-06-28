@@ -6,8 +6,9 @@
     --cor_fundo: rgb(197, 140, 250);
     --cor_main: rgb(229, 231, 101);
     --cor_main_dark: rgb(0, 0, 0);
-    --cor_footer:rgb(231, 101, 172);
+    --cor_footer: rgb(231, 101, 172);
 }
+
 /* Resetar contorno da página */
 * {
     outline: 0;
@@ -76,6 +77,25 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-  }
+}
 
+/* Inclusão da limitação do aside*/
+aside {
+    max-width: 50%;
+}
 
+/* Redução do tamanho da imagem para visualizar a mensagem*/
+aside img {
+    width: 80%;
+}
+
+/* Definição das classes para exibir uma cor de fundo para a mensagem */
+.fraseOk,
+.fraseNo {
+    background-color: rgb(79, 208, 46);
+    padding: 10px 20px;
+}
+
+.fraseNo {
+    background-color: rgb(255 0 0);
+}
